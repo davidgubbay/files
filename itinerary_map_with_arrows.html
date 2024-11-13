@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_577d7cb7401a3f9a7d4a6c14c20ac857 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_577d7cb7401a3f9a7d4a6c14c20ac857" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_577d7cb7401a3f9a7d4a6c14c20ac857 = L.map(
+                "map_577d7cb7401a3f9a7d4a6c14c20ac857",
+                {
+                    center: [28.2916, -16.6291],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d16bc56893c564e38ad30640f2a2a087 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_577d7cb7401a3f9a7d4a6c14c20ac857);
+        
+    
+            var marker_1556f2bfa5966f573969a830b1817e53 = L.marker(
+                [41.3851, 2.1734],
+                {}
+            ).addTo(map_577d7cb7401a3f9a7d4a6c14c20ac857);
+        
+    
+        var popup_9c9d5a13b5b71f5d40106d69a953dd01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_456d6d1df07746b07b9b0b9e9ab1731a = $(`<div id="html_456d6d1df07746b07b9b0b9e9ab1731a" style="width: 100.0%; height: 100.0%;">Day 1: Barcelona, Spain<br>Date: 12/9/2024<br>Arrive: <br>Depart: 17:00</div>`)[0];
+            popup_9c9d5a13b5b71f5d40106d69a953dd01.setContent(html_456d6d1df07746b07b9b0b9e9ab1731a);
+        
+
+        marker_1556f2bfa5966f573969a830b1817e53.bindPopup(popup_9c9d5a13b5b71f5d40106d69a953dd01)
+        ;
+
+        
+    
+    
+            marker_1556f2bfa5966f573969a830b1817e53.bindTooltip(
+                `<div>
+                     Day 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ce7d3d0cb533c41ef9080fd411ae946 = L.marker(
+                [29.0469, -13.5899],
+                {}
+            ).addTo(map_577d7cb7401a3f9a7d4a6c14c20ac857);
+        
+    
+        var popup_efeab5caf4df76fdb206c5e137be2838 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41a3e7e511a92442bfc9ffb8432e1c47 = $(`<div id="html_41a3e7e511a92442bfc9ffb8432e1c47" style="width: 100.0%; height: 100.0%;">Day 2: Lanzarote, Canary Islands<br>Date: 12/12/2024<br>Arrive: 09:00<br>Depart: 20:00</div>`)[0];
+            popup_efeab5caf4df76fdb206c5e137be2838.setContent(html_41a3e7e511a92442bfc9ffb8432e1c47);
+        
+
+        marker_2ce7d3d0cb533c41ef9080fd411ae946.bindPopup(popup_efeab5caf4df76fdb206c5e137be2838)
+        ;
+
+        
+    
+    
+            marker_2ce7d3d0cb533c41ef9080fd411ae946.bindTooltip(
+                `<div>
+                     Day 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_baf147dfa1b53b429898d9718e7d9235 = L.marker(
+                [28.1235, -15.4363],
+                {}
+            ).addTo(map_577d7cb7401a3f9a7d4a6c14c20ac857);
+        
+    
+        var popup_36115f9b23f04c0703c3b25fc884fd3b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2bb5e927d46239fec915b3fe730531cc = $(`<div id="html_2bb5e927d46239fec915b3fe730531cc" style="width: 100.0%; height: 100.0%;">Day 3: Gran Canaria, Canary Islands<br>Date: 12/13/2024<br>Arrive: 08:00<br>Depart: 18:00</div>`)[0];
+            popup_36115f9b23f04c0703c3b25fc884fd3b.setContent(html_2bb5e927d46239fec915b3fe730531cc);
+        
+
+        marker_baf147dfa1b53b429898d9718e7d9235.bindPopup(popup_36115f9b23f04c0703c3b25fc884fd3b)
+        ;
+
+        
+    
+    
+            marker_baf147dfa1b53b429898d9718e7d9235.bindTooltip(
+                `<div>
+                     Day 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14694e925137f4ac172465c81bf5bdf6 = L.marker(
+                [28.2916, -16.6291],
+                {}
+            ).addTo(map_577d7cb7401a3f9a7d4a6c14c20ac857);
+        
+    
+        var popup_38de319ea80846ec226da56ae3dad71d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e136b8108e71489aa96e5f535c855f01 = $(`<div id="html_e136b8108e71489aa96e5f535c855f01" style="width: 100.0%; height: 100.0%;">Day 4: Tenerife, Canary Islands<br>Date: 12/14/2024<br>Arrive: 08:00<br>Depart: 17:00</div>`)[0];
+            popup_38de319ea80846ec226da56ae3dad71d.setContent(html_e136b8108e71489aa96e5f535c855f01);
+        
+
+        marker_14694e925137f4ac172465c81bf5bdf6.bindPopup(popup_38de319ea80846ec226da56ae3dad71d)
+        ;
+
+        
+    
+    
+            marker_14694e925137f4ac172465c81bf5bdf6.bindTooltip(
+                `<div>
+                     Day 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51cbd9bb1ce17af2afb76ab8f028903b = L.marker(
+                [33.5731, -7.5898],
+                {}
+            ).addTo(map_577d7cb7401a3f9a7d4a6c14c20ac857);
+        
+    
+        var popup_9edce8b0663dfeeb40c6ea874789b512 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4014e66d025a38d0ed7eb5184e7dea4c = $(`<div id="html_4014e66d025a38d0ed7eb5184e7dea4c" style="width: 100.0%; height: 100.0%;">Day 5: Casablanca, Morocco<br>Date: 12/16/2024<br>Arrive: 08:00<br>Depart: 19:00</div>`)[0];
+            popup_9edce8b0663dfeeb40c6ea874789b512.setContent(html_4014e66d025a38d0ed7eb5184e7dea4c);
+        
+
+        marker_51cbd9bb1ce17af2afb76ab8f028903b.bindPopup(popup_9edce8b0663dfeeb40c6ea874789b512)
+        ;
+
+        
+    
+    
+            marker_51cbd9bb1ce17af2afb76ab8f028903b.bindTooltip(
+                `<div>
+                     Day 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4725b1d892d06e1182ef19f5406e845 = L.marker(
+                [35.7595, -5.8339],
+                {}
+            ).addTo(map_577d7cb7401a3f9a7d4a6c14c20ac857);
+        
+    
+        var popup_b9619e1e026df92b5abb2ef96594853b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8761edae8d4f274f1d8320e63ffcaf90 = $(`<div id="html_8761edae8d4f274f1d8320e63ffcaf90" style="width: 100.0%; height: 100.0%;">Day 6: Tangier, Morocco<br>Date: 12/17/2024<br>Arrive: 08:00<br>Depart: 17:00</div>`)[0];
+            popup_b9619e1e026df92b5abb2ef96594853b.setContent(html_8761edae8d4f274f1d8320e63ffcaf90);
+        
+
+        marker_a4725b1d892d06e1182ef19f5406e845.bindPopup(popup_b9619e1e026df92b5abb2ef96594853b)
+        ;
+
+        
+    
+    
+            marker_a4725b1d892d06e1182ef19f5406e845.bindTooltip(
+                `<div>
+                     Day 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c52e2a5feceed3e8cc244c97db160f35 = L.marker(
+                [36.5297, -6.2926],
+                {}
+            ).addTo(map_577d7cb7401a3f9a7d4a6c14c20ac857);
+        
+    
+        var popup_af05a1c93f2ea9ba919e35ac49ebbda3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b12cc323a78ac72c8589a0cdb979268f = $(`<div id="html_b12cc323a78ac72c8589a0cdb979268f" style="width: 100.0%; height: 100.0%;">Day 7: Seville (Cadiz), Spain<br>Date: 12/18/2024<br>Arrive: 07:00<br>Depart: 18:00</div>`)[0];
+            popup_af05a1c93f2ea9ba919e35ac49ebbda3.setContent(html_b12cc323a78ac72c8589a0cdb979268f);
+        
+
+        marker_c52e2a5feceed3e8cc244c97db160f35.bindPopup(popup_af05a1c93f2ea9ba919e35ac49ebbda3)
+        ;
+
+        
+    
+    
+            marker_c52e2a5feceed3e8cc244c97db160f35.bindTooltip(
+                `<div>
+                     Day 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4eda9c9e9d16a3797a67732dd51b3f04 = L.marker(
+                [36.7213, -4.4214],
+                {}
+            ).addTo(map_577d7cb7401a3f9a7d4a6c14c20ac857);
+        
+    
+        var popup_3b869440773a93f57345f5476ef65c2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19b0f0392d721a9150093801fa2464f8 = $(`<div id="html_19b0f0392d721a9150093801fa2464f8" style="width: 100.0%; height: 100.0%;">Day 8: Malaga, Spain<br>Date: 12/19/2024<br>Arrive: 08:00<br>Depart: 18:00</div>`)[0];
+            popup_3b869440773a93f57345f5476ef65c2c.setContent(html_19b0f0392d721a9150093801fa2464f8);
+        
+
+        marker_4eda9c9e9d16a3797a67732dd51b3f04.bindPopup(popup_3b869440773a93f57345f5476ef65c2c)
+        ;
+
+        
+    
+    
+            marker_4eda9c9e9d16a3797a67732dd51b3f04.bindTooltip(
+                `<div>
+                     Day 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b9172241f9414bd0fc99f59d970f480 = L.marker(
+                [41.3851, 2.1734],
+                {}
+            ).addTo(map_577d7cb7401a3f9a7d4a6c14c20ac857);
+        
+    
+        var popup_496425ae093dd2553ca03acf666a8401 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_731ab4246b0712c2f2386f6e3c174160 = $(`<div id="html_731ab4246b0712c2f2386f6e3c174160" style="width: 100.0%; height: 100.0%;">Day 9: Barcelona, Spain<br>Date: 12/22/2024<br>Arrive: 05:00<br>Depart: </div>`)[0];
+            popup_496425ae093dd2553ca03acf666a8401.setContent(html_731ab4246b0712c2f2386f6e3c174160);
+        
+
+        marker_6b9172241f9414bd0fc99f59d970f480.bindPopup(popup_496425ae093dd2553ca03acf666a8401)
+        ;
+
+        
+    
+    
+            marker_6b9172241f9414bd0fc99f59d970f480.bindTooltip(
+                `<div>
+                     Day 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_f881a8c4a50038d3651505207d68f2b8 = L.polyline.antPath(
+              [[41.3851, 2.1734], [29.0469, -13.5899], [28.1235, -15.4363], [28.2916, -16.6291], [33.5731, -7.5898], [35.7595, -5.8339], [36.5297, -6.2926], [36.7213, -4.4214], [41.3851, 2.1734]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+        ).addTo(map_577d7cb7401a3f9a7d4a6c14c20ac857);
+        
+</script>
+</html>
